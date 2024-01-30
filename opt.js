@@ -1,4 +1,4 @@
- const generateOtp = (otpLength) => {
+ const Otp = (otpLength) => {
     let otp = "";
   
   
@@ -8,4 +8,4 @@
     return Number(otp);
   };
   
-   console.log("Your Otp is :  ", generateOtp(3));
+   console.log("Your Otp is :  ", Otp(4));
