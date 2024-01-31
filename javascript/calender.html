@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calender</title>
+</head>
+<body>
+        <p id="otp"></p>     
+        <p id="cal"> </p>     
+
+   <script>
+    const calendar = (year, month) => {
+    const daysInMonth = new Date(year, month + 1, 0).getDate();
+    const firstDayOfMonth = new Date(year, month, 1).getDay();
+  
+    const calendar = [];
+    for (let i = 0; i < firstDayOfMonth; i++) {
+      calendar.push();
+      
+    }
+    for (let day = 1; day <= daysInMonth; day++) {
+      calendar.push(day);
+    }
+    return calendar;
+  };
+
+  document.getElementById("cal").innerHTML = calendar(2024,1);
+    
+   </script> 
+</body>
+</html>
